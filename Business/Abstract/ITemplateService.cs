@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Business.Abstract
 {
-    internal interface ITemplateService
+    public interface ITemplateService
     {
         IDataResult<Template> Add(Template template);
 

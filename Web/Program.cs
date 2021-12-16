@@ -12,7 +12,6 @@ builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory())
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<TemplateContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefeaultString")));
 
 builder.Services.AddAuthentication().AddCookie(builder =>
 {
